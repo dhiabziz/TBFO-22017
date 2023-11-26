@@ -128,7 +128,7 @@ k ^ k 3 ^
 l + l l l
 l / l l / 
 l * l U *l 
-l l / 3 ^ 
+l ^ 3 3 3
 l - l V Vl
 m + m m m
 m / m m /
@@ -151,7 +151,7 @@ o - o V Vo
 p + p p p
 p / p p / 
 p * p U *p
-p p / 3 ^ 
+p ^ 3 3 3
 p - p V Vp 
 p * p I *p 
 p * p J *p 
@@ -331,3 +331,5 @@ q ^ q l ^
 q ^ q p ^
 r r / l ^
 r r / p ^
+p ^ l l l
+l ^ p p p
