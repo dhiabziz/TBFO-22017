@@ -135,12 +135,152 @@ l / l l l
 l * l U *l 
 l l / 3 ^ 
 l ^ l V Vl
-m + 
-m 
-m 
-m 
-m 
-m 
+m + m m m
+m / m m /
+m * m E *m
+m m / 3 ^ 
+m ^ m V Vm
+m * m U *m
+n * F G *F
+n * n G *n 
+n ^ F 3 ^ 
+n * n F *n 
+n * F U *F 
+n * n U *n 
+o * o H *o
+o + o o o 
+o / o o / 
+o * o U *o
+o o / 3 ^
+o ^ o V Vo
+p + p p p
+p / p p / 
+p * p U *p
+p p / 3 ^ 
+p ^ p V Vp 
+p * p I *p 
+p * p J *p 
+q * q U *q
+q ^ q 3 ^ 
+q * q H *q
+r / r r /
+r * r U *r  
+r r / 3 ^ 
+r s r s sr
+s / s s /
+s * s U *s 
+s s / r ^ 
+s t s t ts 
+s u s u us
+t / t t / 
+t + t t t 
+t t / s ^ 
+t * t U *t 
+u / u u /
+u + u u u 
+u u / s ^ 
+u * u U *u 
+U = A U ^
+U = B U ^
+U = C U ^
+U A * U A 
+U B * U B 
+U C * U C 
+U ^ 1 1 1
+U ^ 2 2 2
+U ^ 3 3 3
+U ^ 4 4 4
+U ^ 5 5 5
+U ^ 6 6 6
+U ^ 7 7 7
+U ^ 8 8 8
+U ^ 9 9 9
+U ^ a a a 
+U ^ b b b 
+U ^ c c c 
+U ^ d d d 
+U ^ e e e 
+U ^ f f f 
+U ^ g g g 
+U ^ h h h 
+U ^ i i i 
+U ^ j j j 
+U ^ k k k 
+U ^ l l l 
+U ^ m m m 
+U ^ n n n 
+U ^ o o o 
+U ^ p p p 
+U ^ q q q 
+U ^ r r r 
+U ^ s s s 
+U ^ t t t 
+U ^ u u u 
+U ^ F n F
+U ^ D 6 D
+V ^ V V ^
+V ^ 7 7 7
+V ^ 8 8 8
+V ^ 9 9 9
+V ^ a a a 
+V ^ b b b 
+V ^ c c c 
+V ^ d d d 
+V f V f fV
+V g V g gV
+V h V h hV
+V i V i iV
+V j V j jV
+V ^ l l l 
+V ^ m m m 
+V ^ o o o 
+V ^ p p p 
+V ^ t t t 
+V ^ u u u 
+E E * E E
+E = E E ^ 
+E ^ 6 6 6 
+E ^ D 6 D 
+E ^ m m m 
+F F * F ^
+F = n n F 
+F = 5 5 5
+H H * H H 
+H = H H ^ 
+H K o o ^ 
+H L o o ^ 
+H M o o ^
+H P q q ^ 
+H Q q q ^ 
+H R q q ^ 
+H S q q ^ 
+H T q q ^ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  
