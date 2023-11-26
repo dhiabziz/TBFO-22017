@@ -8,8 +8,8 @@ def main():
         print("Error: Argumen Program tidak valid!")
         print("Format Command: python main.py (FileConfig).txt (FileHTML).html")
     else:
-        config = readConfig("../config/"+sys.argv[1])
         word = readHTML("../../test/"+sys.argv[2])
+        config = readConfig("../config/"+sys.argv[1])
         startState = config['starting_state']
         startStack = [config['starting_stack']]
         if PDA(startState, word, startStack, config):
