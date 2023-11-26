@@ -72,19 +72,23 @@ def main():
         startState = config['starting_state']
         startStack = [config['starting_stack']]
 
-        error = (len(word), startState, word, [])
+        error = (len(word), startState, word, startStack)
+        print(word)
         result = PDABONUS(startState, word, startStack, config, error)
         if result[0]:
             print("Accepted")
         else:
             print("Syntax Error: ")
+            # BONUS
             print(result[1])
             print("  ", end='')
             state = result[1][1]
             input = result[1][2]
             stack = result[1][3]
             top = stack[-1]
-            if (top == '*'): # Error Attribute
+            if (top == '0' and state == '0'):
+                print("File harus diawali oleh Tag <html>.")
+            elif (top == '*'): # Error Attribute
                 if (result[1][3][-2] in tokenTag):
                     print(f'Attribut pada Tag <{tokenTag[result[1][3][-2]]}> tidak valid.')
                 else:
@@ -105,19 +109,19 @@ def main():
                     print(f'Tag <{tokenTag[state]}> tidak bisa ditutup karena Closing Tag tidak valid.')
                 else:
                     print("Error Closing Tag.")
-            elif (input[0] == '/'): # Error Closing Tag
-                if ((state in tokenTag) and (input[1] in tokenTag)):
-                    print(f'Tag <{tokenTag[state]}> tidak bisa ditutup oleh Closing Tag </{tokenTag[input[1]]}>.')
-                elif (state in tokenTag) and (input[1] == '!'):
-                    print(f'Tag <{tokenTag[state]}> tidak bisa ditutup karena Closing Tag tidak valid.')
-                else:
-                    print("Error Closing Tag.")
             elif (top in tokenTag): # Error Tag
                 print(f'Kesalahan di Tag: <{tokenTag[top]}>.')
             elif (top in tokenAttribut): # Error Attribute
                 print(f'Kesalahan di Attribute: "{tokenAttribut[top]}".')
             elif (top in tokenNilaiAttribut): # Error Attribute Value
                 print(f'Kesalahan di Attribute Value: "{tokenNilaiAttribut[top]}".')
+            elif (len(input) != 0 and input[0] == '/'): # Error Closing Tag
+                if ((state in tokenTag) and (input[1] in tokenTag)):
+                    print(f'Tag <{tokenTag[state]}> tidak bisa ditutup oleh Closing Tag </{tokenTag[input[1]]}>.')
+                elif (state in tokenTag) and (input[1] == '!'):
+                    print(f'Tag <{tokenTag[state]}> tidak bisa ditutup karena Closing Tag tidak valid.')
+                else:
+                    print("Error Closing Tag.")
             else:
                 print("Error belum di handle.")
 

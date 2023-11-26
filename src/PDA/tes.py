@@ -2,7 +2,7 @@ import configPDA
 from PDA import PDA
 from htmlReader import readHTML
 
-path = "../../test/" + input("File html: ")
+# path = "../../test/" + input("File html: ")
 # config = configPDA.readConfig(path)
 # word = input("Input: ")
 # startState = config['starting_state']
@@ -14,4 +14,13 @@ path = "../../test/" + input("File html: ")
 # else:
 #     print("Syntax Error")
 
-print(readHTML(path))
+# print(readHTML(path))
+
+from re import search
+
+attr = 'src'
+text = '<img src=”./welcome.jpeg”>'
+if search(f'{attr}=("(.*)"|\'(.*)\'|”(.*)”)', text):
+    print("Acc")
+else:
+    print("reject")

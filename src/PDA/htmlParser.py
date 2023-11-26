@@ -35,6 +35,14 @@ tokenTag = {
     "td" : 'u',
 }
 
+tokenFormattingElement = {
+    "em" : 'f',
+    "b" : 'g',
+    "abbr" : 'h',
+    "strong" : 'i',
+    "small" : 'j'
+}
+
 tokenAttribut = {
     "id" : 'A',
     "class" : 'B',
@@ -68,6 +76,8 @@ class MyHTMLParser(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         if (tag in tokenTag):
+            if (tag in tokenFormattingElement):
+                self.Myrawdata += "-"
             self.Myrawdata += tokenTag[tag.strip()]
         else: # Tidak ada di Dict Token
             self.Myrawdata += "!"
@@ -78,7 +88,7 @@ class MyHTMLParser(HTMLParser):
                 self.Myrawdata += "*"+tokenAttribut[attr[0].strip()]
 
                 # Add Attribute Value Token if exists {attr}=".*" or {attr}='.*'
-                if (search(f'{attr[0]}(\s)*=(\s)*("(.*)"|\'(.*)\')', self.get_starttag_text())):
+                if (search(f'{attr[0].strip()}=("(.*)"|\'(.*)\'|”(.*)”)', self.get_starttag_text())):
                     self.Myrawdata += '='
 
                 if (attr[0] == "type" or attr[0] == "method"): # Kalau type atau method, value harus dicek PDA
