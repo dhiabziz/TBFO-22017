@@ -255,6 +255,16 @@ H Q q q ^
 H R q q ^ 
 H S q q ^ 
 H T q q ^ 
+G = G n ^
+G G * G G 
+D D * D D
+D = D 6 D 
+I = I p ^
+I I * I I 
+J J * J J 
+J = J J = 
+J N = p ^
+J O = p ^ 
 
 
 
