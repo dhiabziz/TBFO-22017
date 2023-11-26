@@ -1,7 +1,7 @@
 # error --> (lenMin, state, input, stack)
 # return --> (True/False, error)
 
-def PDABONUS(state, input, stack, config, error):
+def PDABonus(state, input, stack, config, error):
     # Input sudah kosong
     if (len(input) == 0):
         # Cek State ada di Accepting States (Basis)
@@ -18,7 +18,7 @@ def PDABONUS(state, input, stack, config, error):
                     elif (prod[4] != '^'):
                         nextStack.append(prod[4])
                     
-                    res = PDABONUS(prod[3], input[1:], nextStack, config, error)
+                    res = PDABonus(prod[3], input[1:], nextStack, config, error)
                     if (res[1][0] < error[0]):
                         error = res[1]
                     if (res[0]):
@@ -39,7 +39,7 @@ def PDABONUS(state, input, stack, config, error):
                     else: # Menerima input epsilon
                         nextInput = input[0:]
                     
-                    res = PDABONUS(prod[3], nextInput, nextStack, config, error)
+                    res = PDABonus(prod[3], nextInput, nextStack, config, error)
                     if (res[1][0] < error[0]):
                         error = res[1]
                     if (res[0]): # Cek next 
@@ -47,5 +47,4 @@ def PDABONUS(state, input, stack, config, error):
     # Gagal
     if (len(input) < error[0]):
         error = (len(input), state, input, stack)
-
     return (False, error)

@@ -1,5 +1,5 @@
 import sys
-from PDABONUS import PDABONUS
+from PDABonus import PDABonus
 from htmlReader import readHTML
 from configPDA import readConfig
 
@@ -67,20 +67,19 @@ def main():
         print("Error: Argumen Program tidak valid!")
         print("Format Command: python main.py (FileConfig).txt (FileHTML).html")
     else:
-        config = readConfig("./"+sys.argv[1])
+        config = readConfig("../config/"+sys.argv[1])
         word = readHTML("../../test/"+sys.argv[2])
         startState = config['starting_state']
         startStack = [config['starting_stack']]
-
         error = (len(word), startState, word, startStack)
-        print(word)
-        result = PDABONUS(startState, word, startStack, config, error)
+        result = PDABonus(startState, word, startStack, config, error)
         if result[0]:
             print("Accepted")
         else:
             print("Syntax Error: ")
             # BONUS
-            print(result[1])
+            # print(word)
+            # print(result[1])
             print("  ", end='')
             state = result[1][1]
             input = result[1][2]
@@ -88,6 +87,8 @@ def main():
             top = stack[-1]
             if (top == '0' and state == '0'):
                 print("File harus diawali oleh Tag <html>.")
+            elif ((state == 'H' or state == 'J') and top == '='):
+                print(f'Nilai Attribut \"{tokenAttribut[state]}\" di luar batasan.')
             elif (top == '*'): # Error Attribute
                 if (result[1][3][-2] in tokenTag):
                     print(f'Attribut pada Tag <{tokenTag[result[1][3][-2]]}> tidak valid.')

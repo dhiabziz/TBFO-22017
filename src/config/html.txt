@@ -1,6 +1,6 @@
-0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u A B C D E F G H I J K L M N O P Q R S T z Z
+0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u A B C D E F G H I J K L M N O P Q R S T U V z Z
 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u A B C D E F G H I J K L M N O P Q R S T / * + - = !
-0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u A B C D E F G H I J K L M N O P Q R S T / * + - =
+0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u A B C D E F G H I J K L M N O P Q R S T V / * + - =
 0
 0
 Z
@@ -28,11 +28,6 @@ Z
 3 c 3 c c3
 3 d 3 d d3
 3 e 3 e e3
-3 f 3 f f3
-3 g 3 g g3
-3 h 3 h h3
-3 i 3 i i3
-3 j 3 j j3
 3 k 3 k k3
 3 l 3 l l3
 3 m 3 m m3
@@ -41,6 +36,7 @@ Z
 3 p 3 p p3
 3 q 3 q q3
 3 r 3 r r3
+3 - 3 V V3
 z / 1 z ^
 z 1 0 Z ^
 4 + 4 4 4
@@ -64,37 +60,37 @@ z 1 0 Z ^
 7 / 7 7 /
 7 * 7 U *7
 7 7 / 3 ^
-7 ^ 7 V V7
+7 - 7 V V7
 8 + 8 8 8
 8 / 8 8 /
 8 * 8 U *8
 8 8 / 3 ^
-8 ^ 8 V V8
+8 - 8 V V8
 9 + 9 9 9
 9 / 9 9 /
 9 * 9 U *9
 9 9 / 3 ^
-9 ^ 9 V V9
+9 - 9 V V9
 a + a a a 
 a / a a /
 a * a U *a
 a a / 3 ^ 
-a ^ a V Va
+a - a V Va
 b + b b b  
 b / b b /
 b * b U *b
 b b / 3 ^ 
-b ^ b V Vb
+b - b V Vb
 c + c c c 
 c / c c /
 c * c U *c
 c c / 3 ^
-c ^ c V Vc
+c - c V Vc
 d + d d d
 d / d d / 
 d * d U *d
 d d / 3 ^ 
-d ^ d V Vd
+d - d V Vd
 e * e U *e
 e ^ e 3 ^
 f f / f ^
@@ -133,12 +129,12 @@ l + l l l
 l / l l / 
 l * l U *l 
 l l / 3 ^ 
-l ^ l V Vl
+l - l V Vl
 m + m m m
 m / m m /
 m * m E *m
 m m / 3 ^ 
-m ^ m V Vm
+m - m V Vm
 m * m U *m
 n * F G *F
 n * n G *n 
@@ -151,12 +147,12 @@ o + o o o
 o / o o / 
 o * o U *o
 o o / 3 ^
-o ^ o V Vo
+o - o V Vo
 p + p p p
 p / p p / 
 p * p U *p
 p p / 3 ^ 
-p ^ p V Vp 
+p - p V Vp 
 p * p I *p 
 p * p J *p 
 q * q U *q
@@ -225,6 +221,7 @@ V ^ a a a
 V ^ b b b 
 V ^ c c c 
 V ^ d d d 
+V ^ 3 3 3
 V f V f fV
 V g V g gV
 V h V h hV
@@ -246,14 +243,14 @@ F = n n F
 F = 5 5 5
 H H * H H 
 H = H H ^ 
-H K o o ^ 
-H L o o ^ 
-H M o o ^
-H P q q ^ 
-H Q q q ^ 
-H R q q ^ 
-H S q q ^ 
-H T q q ^ 
+H K o o o 
+H L o o o 
+H M o o o
+H P q q q 
+H Q q q q 
+H R q q q 
+H S q q q 
+H T q q q 
 G = G n ^
 G G * G G 
 D D * D D
