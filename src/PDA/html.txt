@@ -48,3 +48,100 @@ z 1 0 Z ^
 4 / 4 4 /
 4 4 / 2 ^
 4 * 4 U *4
+5 * 5 U *5
+5 * 5 F *F
+5 + 5 5 5
+5 / 5 5 /
+5 5 / 5 ^
+5 ^ 3 3 3
+5 ^ 2 2 2
+6 * 6 E *6
+6 * 6 D *6
+6 * 6 U *6
+6 * D U *D
+6 ^ D 3 D
+6 ^ D 2 D 
+7 + 7 7 7
+7 / 7 7 /
+7 * 7 U *7
+7 7 / 3 ^
+7 ^ 7 V V7
+8 + 8 8 8
+8 / 8 8 /
+8 * 8 U *8
+8 8 / 3 ^
+8 ^ 8 V V8
+9 + 9 9 9
+9 / 9 9 /
+9 * 9 U *9
+9 9 / 3 ^
+9 ^ 9 V V9
+a + a a a 
+a / a a /
+a * a U *a
+a a / 3 ^ 
+a ^ a V Va
+b + b b b  
+b / b b /
+b * b U *b
+b b / 3 ^ 
+b ^ b V Vb
+c + c c c 
+c / c c /
+c * c U *c
+c c / 3 ^
+c ^ c V Vc
+d + d d d
+d / d d / 
+d * d U *d
+d d / 3 ^ 
+d ^ d V Vd
+e * e U *e
+e ^ e 3 ^
+f f / f ^
+g g / g ^
+h h / h ^
+i i / i ^
+j j / j ^
+f + f f f
+g + g g g 
+h + h h h 
+i + i i i 
+j + j j j
+f / f f / 
+g / g g /
+h / h h /
+i / i i /
+j / j j /
+f * f U *f
+g * g U *g 
+h * h U *h 
+i * i U *i 
+j * j U *j 
+f ^ V V V
+g ^ V V V
+h ^ V V V
+i ^ V V V 
+j ^ V V V
+f ^ 3 3 3
+g ^ 3 3 3
+h ^ 3 3 3
+i ^ 3 3 3
+j ^ 3 3 3
+k * k U *k 
+k ^ k 3 ^
+l + l l l
+l / l l l 
+l * l U *l 
+l l / 3 ^ 
+l ^ l V Vl
+m + 
+m 
+m 
+m 
+m 
+m 
+
+
+ 
+
